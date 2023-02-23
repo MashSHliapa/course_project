@@ -1,3 +1,8 @@
+@import url("../styles/numbers.scss");
+@import url("../styles/servise.scss");
+@import url("../styles/devices.scss");
+
+
 * {
   box-sizing: border-box;
 }
@@ -449,10 +454,10 @@ a {
 		}
 
 		&__subtitle {
-      padding: 45px 0;
+      padding: 35px 0;
       @media (max-width: 1024px) {
         font-size: 14px;
-        padding: 40px 0;
+        padding: 30px 0;
         margin: 0 16px;
       }
 		}
@@ -612,3 +617,9 @@ a {
     }
   }
 }
+
+
+/*numbers*/
+
+
+

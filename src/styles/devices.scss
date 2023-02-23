@@ -1,0 +1,170 @@
+%container {
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+%subject {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 145%;
+  padding: 18px 0;
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    padding: 16px 0;
+  }
+}
+
+%title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 117%;
+  padding: 20px 0;
+  margin-bottom: 24px;
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    padding: 18px 0;
+    margin-bottom: 20px;
+  }
+}
+
+%separator {
+  width: 170px;
+  height: 4px;
+  background-color: #F38281;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    width: 148px;
+  }
+  @media (max-width: 767px) {
+    width: 134px;
+  }
+}
+
+.devices-form {
+  max-width: 1510px;
+  background:
+  linear-gradient(rgb(251, 251, 252), rgba(249, 248, 248, 0.5)),
+  url("../images/unsplash_lpjb_UMOyx8.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.devices-container {
+  @extend %container;
+}
+.devices {
+
+		// .devices__promo
+
+		&__promo {
+      text-align: center;
+      padding-top: 42px;
+      @media (max-width: 767px) {
+        margin: 0 16px;
+      }
+		}
+
+		&__subject {
+      @extend %subject;
+		}
+
+		&__title {
+      @extend %title;
+		}
+
+		&__separator {
+      @extend %separator;
+		}
+
+		// .devices__box
+
+		&__box {
+      margin: 59px 0 0px;
+      padding-bottom: 70px;
+      position: relative;
+		}
+
+		&__cover-table {
+      text-align: center;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 3;
+		}
+
+    &__cover-table img {
+      border: 15px solid black;
+      border-radius: 20px;
+      @media (max-width: 1024px) {
+        width: 500px;
+        max-height: 358px;
+      }
+      @media (max-width: 767px) {
+        width: 285px;
+        height: 219px;
+      }
+		}
+
+		// .devices__cover-phone
+
+		&__cover-phone {
+		}
+
+    /*граница телефона*/
+
+    &__cover-phone1 {
+      position: absolute;
+      top: 212px;
+      left: 765px;
+      z-index: 5;
+      @media (max-width: 1024px) {
+        width: 140px;
+        height: 290px;
+        position: absolute;
+        top: 143px;
+        left: 550px;
+        z-index: 5;
+      }
+      @media (max-width: 767px) {
+        width: 90px;
+        height: 180px;
+        position: absolute;
+        top: 97px;
+        left: 185px;
+        z-index: 5;
+      }
+    }
+
+    /*экран*/
+    &__cover-phone2 {
+      position: absolute;
+      top: 212px;
+      left: 770px;
+      z-index: 4;
+      @media (max-width: 1024px) {
+        width: 135px;
+        height: 280px;
+        position: absolute;
+        top: 143px;
+        left: 552px;
+        z-index: 4;
+      }
+      @media (max-width: 767px) {
+        width: 85px;
+        height: 175px;
+        position: absolute;
+        top: 97px;
+        left: 186px;
+        z-index: 4;
+      }
+    }
+}
+

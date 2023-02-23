@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 117%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-class {
+  max-width: 1510px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+%container {
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+%nav {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 117%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+%main_subject {
+  font-family: "Kaushan Script", cursive;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 145%;
+  margin: 5px 0;
+}
+
+%main_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 144px;
+  font-weight: 900;
+  line-height: 122%;
+  text-transform: uppercase;
+}
+
+%separator_title {
+  width: 170px;
+  height: 4px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+%separator {
+  width: 170px;
+  height: 4px;
+  background-color: #F38281;
+  margin: 0 auto;
+}
+
+%button {
+  max-width: 370px;
+  padding: 20px 0;
+  margin: 0 auto;
+  border: #FFFFFF 4px solid;
+}
+
+%button-text {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+

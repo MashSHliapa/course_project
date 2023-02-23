@@ -1,0 +1,100 @@
+$bg-color:#95E1D3;
+$color: #FFFFFF;
+%font {
+  font-family:  "Raleway", sans-serif;
+}
+
+
+%container {
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+
+.numbers {
+  background: $bg-color;
+  margin-bottom: 42px;
+  @media (max-width: 1024px) {
+    margin-bottom: 29px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 29px;
+  }
+
+  &__row {
+    display: flex;
+    @media (max-width: 1024px) {
+      padding: 0 6px;
+    }
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__column {
+    border-left: 1px #fff solid;
+    @media (max-width: 767px) {
+      border-left: none;
+      border-bottom: 1px #fff solid;
+      padding-bottom: 15px;
+    }
+
+
+    &:last-child {
+      border-right: 1px #fff solid;
+      @media (max-width: 767px) {
+        border: none;
+      }
+    }
+  }
+
+
+  &__item {
+    color: $color;
+    max-width: 234px;
+    max-height: 250px;
+    padding: 50px 43px;
+    @extend %font;
+    @media (max-width: 1024px) {
+      width: 198px;
+      height: 166px;
+      padding: 30px 0px;
+    }
+    @media (max-width: 767px) {
+      width: 144px;
+      height: 124px;
+      padding: 30px 0px;
+    }
+  }
+
+
+
+  &__number {
+    font-size: 64px;
+    line-height: 117%;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px;
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 117%;
+    text-align: center;
+  }
+}
+
+.numbers-container {
+  @extend %container;
+}

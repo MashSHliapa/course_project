@@ -1,21 +1,4 @@
-%container {
-  max-width: 1170px;
-  margin: 0 auto;
-  @media (max-width: 1024px) {
-    max-width: 1024px;
-  }
-  @media (max-width: 767px) {
-    max-width: 767px;
-  }
-}
 
-.collection-form {
-  margin-top: 84px;
-  background:#E5E5E5;
-}
-.collection-container {
-  @extend %container;
-}
 .collection {
 
 		// .collection__row

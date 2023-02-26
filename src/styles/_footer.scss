@@ -26,16 +26,6 @@
 	}
 }
 
-.footer-class {
-  background: #F8F8F8;
-}
-
-.footer-form {
-}
-
-.footer-container {
-  @extend %container;
-}
 
 .footer {
 
@@ -308,7 +298,7 @@
 
 .footer {
 
-  // .footer__bottom-description (описание в самом низуЮ
+  // .footer__bottom-description (описание в самом низу)
 
   &__bottom-description {
     margin-top: 42px;

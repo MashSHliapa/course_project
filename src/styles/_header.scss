@@ -1,0 +1,21 @@
+
+
+.header-box {
+  max-height: 80px;
+  display: flex;
+  justify-content: space-between;
+
+	&__logo img{
+    margin: 42px 0 0 0px;
+    @media (max-width: 1024px) {
+      margin: 28px 0 0 16px;
+      width: 66px;
+      height: 18px;
+    }
+    @media (max-width: 767px) {
+      margin: 23px 0 0 16px;
+      width: 54px;
+      height: 15px;
+    }
+	}
+}

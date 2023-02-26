@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 117%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-class {
+  max-width: 1510px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+%container {
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+// header (box  и контейнер)
+.header {
+  background:
+  linear-gradient(rgba(233, 130, 131, 0.9), rgba(237, 215, 137, 0.9)),
+  url("../images/rectangle_header.png");
+  max-width: 1510px;
+  margin: 0 auto;
+}
+
+.header-container {
+  @extend %container;
+}
+
+// banner (box  и контейнер)
+/*.banner-box {}*/
+
+.banner-container {
+  @extend %container;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+    padding: 0 16px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+    padding: 0 16px;
+  }
+}
+
+// about (box  и контейнер)
+/*.about-form {}*/
+
+.about-container {
+  @extend %container;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+// collection (form и контейнер)
+.collection-form {
+  margin-top: 84px;
+  background:#E5E5E5;
+}
+.collection-container {
+  @extend %container;
+}
+
+// devices (form и контейнер)
+.devices-form {
+  max-width: 1510px;
+  background:
+  linear-gradient(rgb(251, 251, 252), rgba(249, 248, 248, 0.5)),
+  url("../images/unsplash_lpjb_UMOyx8.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.devices-container {
+  @extend %container;
+}
+
+// servise (form и контейнер)
+
+.servise-form {
+}
+.servise-container {
+	@extend %container;
+}
+
+// work (form и контейнер)
+
+.work-form {}
+
+.work-container {
+  max-width: 1510px;
+  margin: 0 auto;
+}
+
+// stories (form и контейнер)
+
+.stories-form {
+}
+.stories-container {
+  @extend %container;
+}
+
+
+// team (form и контейнер)
+.team-form {
+}
+.team-container {
+  @extend %container;
+}
+
+
+
+// footer (form и контейнер)
+
+.footer-class {
+  background: #F8F8F8;
+}
+
+.footer-form {
+}
+
+.footer-container {
+  @extend %container;
+}
+
+
+
+.separator-link {
+  max-width: 85px;
+  height: 5px;
+  background-color: #F4BF87;
+  position: relative;
+  top: 0;
+  left: 518px;
+  @media (max-width: 1024px) {
+    position: relative;
+    top: 2px;
+    left: 430px;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+

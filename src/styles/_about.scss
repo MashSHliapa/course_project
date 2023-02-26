@@ -1,0 +1,74 @@
+
+%subject {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 145%;
+  padding: 18px 0;
+}
+
+%title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 117%;
+  padding: 20px 0;
+  margin-bottom: 24px;
+}
+
+%separator {
+  width: 170px;
+  height: 4px;
+  background-color: #F38281;
+  margin: 0 auto;
+}
+
+
+.about {
+  padding-top: 50px;
+  @media (max-width: 1024px) {
+    padding: 50px 16px;
+  }
+		&__promo {
+      text-align: center;
+      @media (max-width: 767px) {
+        margin: 0 16px;
+      }
+		}
+
+		&__subject {
+      @extend %subject;
+      @media (max-width: 1024px) {
+        font-size: 24px;
+        padding: 16px 0;
+      }
+		}
+
+		&__title {
+      @extend %title;
+      @media (max-width: 1024px) {
+        font-size: 24px;
+        padding: 18px 0;
+        margin-bottom: 20px;
+      }
+		}
+
+		&__separator {
+      @extend %separator;
+      @media (max-width: 1024px) {
+        width: 148px;
+      }
+      @media (max-width: 767px) {
+        width: 134px;
+      }
+		}
+
+		&__subtitle {
+      padding: 35px 0;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        padding: 30px 0;
+        margin: 0 16px;
+      }
+		}
+}

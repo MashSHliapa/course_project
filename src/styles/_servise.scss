@@ -1,15 +1,4 @@
 
-%container {
-  max-width: 1170px;
-  margin: 0 auto;
-  @media (max-width: 1024px) {
-    max-width: 1024px;
-  }
-  @media (max-width: 767px) {
-    max-width: 767px;
-  }
-}
-
 %subject {
   font-family: "Kaushan Script", cursive;
   font-size: 30px;
@@ -79,11 +68,6 @@
 	}
 }
 
-.servise-form {
-}
-.servise-container {
-	@extend %container;
-}
 
 .servise {
 	@media (max-width: 767px) {

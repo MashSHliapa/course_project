@@ -1,0 +1,338 @@
+%container {
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+%title-footer {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 117%;
+  padding: 20px 0;
+  margin-bottom: 0px;
+	@media (max-width: 1024px) {
+		font-size: 18px;
+		padding: 10px 0;
+		margin-bottom: 20px;
+	}
+  @media (max-width: 767px) {
+    text-align: center;
+	}
+}
+
+.footer-class {
+  background: #F8F8F8;
+}
+
+.footer-form {
+}
+
+.footer-container {
+  @extend %container;
+}
+
+.footer {
+
+		// .footer__row
+
+		&__row {
+      padding: 78px 0 42px;
+      max-height: 455px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 1024px) {
+        padding: 78px 0 42px 16px;
+      }
+      @media (max-width: 767px) {
+        padding: 78px 16px 42px 16px;
+        flex-wrap: wrap;
+      }
+		}
+
+		// .footer__column1 (колонка с подписчиками)
+
+		&__column1 {
+      max-width: 370px;
+      @media (max-width: 1024px) {
+        max-width: 317px;
+      }
+		}
+
+    &__logo{
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+		}
+
+		&__logo img {
+      margin-bottom: 24px;
+      @media (max-width: 1024px) {
+        width: 95px;
+        height: 25px;
+        margin-bottom: 17px;
+      }
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+		}
+
+		&__logo-subtitle {
+      padding: 15px 0;
+      @media (max-width: 1024px) {
+        font-family: 12px;
+        padding: 8px 0;
+      }
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+		}
+
+		// .footer__followers (количество подписчиков)
+
+		&__followers {
+      display: flex;
+      padding: 22px 0 20px;
+      @media (max-width: 1024px) {
+        padding: 14px 0 10px;
+      }
+      @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+      }
+		}
+
+		&__followers-number {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-right: 5px;
+		}
+
+		&__followers-text {
+      text-transform: uppercase;
+      font-size: 14px;
+		}
+
+		// .footer__followers-separator
+
+		&__followers-separator {
+      width: 370px;
+      height: 1px;
+      background-color: #C6CBCD;
+      @media (max-width: 1024px) {
+        width: 317px;
+      }
+      @media (max-width: 767px) {
+        width: 288px;
+      }
+		}
+
+		// .footer__followers-links
+
+		&__followers-links {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0 37px;
+      @media (max-width: 1024px) {
+        margin: 10px 0 17px;
+      }
+		}
+
+		// текст перед ccылками на социальные сети
+
+		&__links-text {
+      font-size: 13px;
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
+		}
+
+		// ccылки на социальные сети
+
+    &__links-items {
+      &:last-child {
+        margin-right: 0px;
+      }
+		}
+
+		&__links-items img {
+      margin-right: 5px;
+      @media (max-width: 1024px) {
+        margin-right: 3px;
+      }
+      @media (max-width: 1024px) {
+        margin-right: 3px;
+        width: 19px;
+      }
+		}
+
+		// отправить email
+
+		/*&__send-mail {}*/
+
+		// .footer__mail
+
+		&__mail {
+      padding: 10px 15px;
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      width: 232px;
+      @media (max-width: 1024px) {
+        width: 165px;
+      }
+      @media (max-width: 767px) {
+        width: 288px;
+      }
+		}
+
+		// .footer__buttom
+
+		&__buttom {
+      background-color: #95E1D3;
+      border: none;
+      color: #fff;
+      padding: 10px 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      width: 133px;
+      @media (max-width: 1024px) {
+        width: 145px;
+      }
+      @media (max-width: 767px) {
+        width: 288px;
+        margin-top: 24px;
+      }
+		}
+}
+
+.footer {
+
+  // .footer__column2 (вторая колонка с картинками и описанием)
+
+  &__column2 {
+    max-width: 468px;
+    @media (max-width: 1024px) {
+      width: 336px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    @extend %title-footer;
+  }
+
+  // .footer__block (блок с картинками и описанием)
+
+  &__block {
+    display: flex;
+  }
+
+  &__cover-photo img {
+    @media (max-width: 1024px) {
+      width: 125px;
+      height: 90px;
+    }
+  }
+
+  &__discription {
+    margin-left: 30px;
+    @media (max-width: 1024px) {
+      margin-left: 19px;
+    }
+  }
+
+  &__discription-title {
+    font-weight: 700;
+    padding: 3px 0;
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      padding: 0px 0;
+    }
+  }
+
+  &__discription-data {
+    font-size: 13px;
+    padding: 10px 0;
+    @media (max-width: 1024px) {
+      font-size: 12px;
+      padding: 0px 0;
+    }
+  }
+}
+
+.footer {
+
+  // .footer__column3 (колонка 3 с фото 9шт)
+
+  &__column3 {
+    max-width: 300px;
+    @media (max-width: 1024px) {
+      max-width: 275px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @extend %title-footer;
+  }
+
+  &__cover-photos img{
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+      width: 78px;
+      height: 76px;
+    }
+  }
+
+  // .footer__last-link (ссылка под фото)
+
+  &__last-link {
+    font-size: 13px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+
+.footer {
+
+  // .footer__bottom-description (описание в самом низуЮ
+
+  &__bottom-description {
+    margin-top: 42px;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  // .footer__bottom-sepatator
+
+  &__bottom-sepatator {
+    margin: 0 auto;
+    background-color: #C6CBCD;
+    width: 1170px;
+    height: 1px;
+    @media (max-width: 1024px) {
+      width: 990px;
+    }
+  }
+
+  &__bottom-text {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
